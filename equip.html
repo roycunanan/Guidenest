@@ -10,13 +10,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/Footer-with-logo.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="animated fadeIn">
   <nav class="navbar navbar-inverse navbar-static-top example6">
     <div class="container">
       <div class="navbar-header">
@@ -43,7 +44,7 @@
   </nav>
   <div class="greybord">
   <div class="container-fluid">
-  	<div class="col-sm-6 col-sm-offset-3" style="margin-bottom: 2em; margin-top: 3em">
+  	<div class="col-sm-6 col-sm-offset-3">
   	<h2 class="intro-text">Equipment</h2>	
       <section id="hrf"><img src="assets/images/dld.png" class="hrf"></section>
   	</div>
@@ -52,20 +53,18 @@
   <div class="container">
     <div class="row">
     <div class="col-md-12 skillsbg">
-      <p class="skillstext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <ul>
+        <li><p class="skillstext">Assassin equipments are more on offensive stats, try to upgrade them at the same time.</p></li>
+        <li><p class="skillstext">Start upgrading your weapons and accessories, to utilize the role of your class as a DPS</li>
+      </ul>
       <ul class="skillset">
-        <li class="borderequip cerbe e1 col-md-6"><img src="assets/images/cerberus.PNG" class="img-responsive">Cerberus Set Lvl 25
+        <li class="borderequip cerbe col-md-6"><img src="assets/images/cerberus.PNG" class="img-responsive e1 ipad">Cerberus Set Lvl 25
           <br>2 pcs set Effect HP+3000
           <br>4 pcs set Effect Def+ 300
           <br>7 pcs set Effect ATK+ 200
         </li>
             
-        <li class="borderequip cerbe e1 col-md-6"><img src="assets/images/manticore.PNG" class="img-responsive">Manticore Set Lvl 35
+        <li class="borderequip cerbe col-md-6"><img src="assets/images/manticore.PNG" class="img-responsive e1 ipad">Manticore Set Lvl 35
           <br>2 pcs set Effect HP+4500
           <br>4 pcs set Effect Def+ 450
           <br>7 pcs set Effect ATK+ 300
@@ -81,9 +80,9 @@
         <div class="col-md-12 col-md-offset-0">
         <div class="centericon">
         <a href="https://play.google.com/store/apps/details?id=com.playfungame.ggplay.lzgsea&hl=en" class="">
-        <img src="assets/images/googleplay.png" height="60px" width="200px" class="googleplay"></a>
+        <img src="assets/images/googleplay.png" class="googleplay"></a>
         <a href="https://www.seagm.com/po-xiao-zhi-guang-mobile" class="">
-        <img src="assets/images/ios.png" height="60px" width="200px" class="ios"></a>
+        <img src="assets/images/ios.png" class="ios"></a>
         </div>
         </div>
         <br>    
@@ -92,6 +91,25 @@
      </div>
     </div>
   </div>
+
+   <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+  <script type="text/javascript"> window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  </script>
 
   <footer id="myFooter">
     <div class="container">

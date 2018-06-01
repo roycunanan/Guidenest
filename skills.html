@@ -10,13 +10,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/Footer-with-logo.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="animated fadeIn">
   <nav class="navbar navbar-inverse navbar-static-top example6">
     <div class="container">
       <div class="navbar-header">
@@ -48,6 +49,7 @@
   </div>
   <div class="container-fluid">   
   	<h2 class="intro-text">Skills</h2>
+    <p class="intro-text">These are the names and description for each skills and percentage of damage </p>
       <section id="hrf"><img src="assets/images/dld.png" class="hrf"></section>
   </div>
     <div class="container">
@@ -114,12 +116,12 @@
         <div class="col-md-12">
           <h3 class="passive">Passive</h3>
           <div class="col-md-6">
-            <li class="borderskill img-responsive">
+            <li class="borderskill pasipad img-responsive">
               <div class="row">
                <div class="col-md-3">
                  <img src="assets/images/66.PNG" class="i1 centered-image">
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-9 pasipad">
                   <p><strong>FLOATING LEAP</strong> 
                   <p class="dmg">When knocked up, press dodge to regain stance. Damage: none</p>
                 </div>
@@ -128,7 +130,7 @@
         </div>
           
           <div class="col-md-6">
-            <li class="borderskill img-responsive">
+            <li class="borderskill  pasipad img-responsive">
               <div class="row">
                 <div class="col-md-3">
                   <img src="assets/images/44.PNG" class="i1 centered-image">
@@ -150,9 +152,9 @@
       <div class="col-md-12 col-md-offset-0">
        <div class="centericon">
         <a href="https://play.google.com/store/apps/details?id=com.playfungame.ggplay.lzgsea&hl=en" class="">
-        <img src="assets/images/googleplay.png" height="60px" width="200px" class="googleplay"></a>
+        <img src="assets/images/googleplay.png" class="googleplay"></a>
         <a href="https://www.seagm.com/po-xiao-zhi-guang-mobile" class="">
-        <img src="assets/images/ios.png" height="60px" width="200px" class="ios"></a>
+        <img src="assets/images/ios.png" class="ios"></a>
        </div>
       </div>
       <br>    
@@ -160,13 +162,32 @@
     </div>
    </div>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+  <script type="text/javascript"> window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  </script>
+
   <footer id="myFooter">
     <div class="container">
         <div class="row">            
             <div class="socials">
-              <a href="https://fb.com"><i class="fa fa-facebook-official" style="font-size:36px">  </i></a>
-              <a href="https://youtube.com"><i class="fa fa-youtube" style="font-size:36px">  </i></a>
-              <a href="https://google.com"><i class="fa fa-google-plus" style="font-size:36px">  </i></a>
+              <a href="https://fb.com"><i class="fa fa-facebook-official">  </i></a>
+              <a href="https://youtube.com"><i class="fa fa-youtube">  </i></a>
+              <a href="https://google.com"><i class="fa fa-google-plus">  </i></a>
               <p>Copyright &copy; Tuitt Bootcamp 2018</p>
               </div>
             </div>

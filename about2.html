@@ -10,13 +10,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/Footer-with-logo.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body class="animated fadeIn">
   <nav class="navbar navbar-inverse navbar-static-top example6">
     <div class="container">
       <div class="navbar-header">
@@ -40,7 +41,7 @@
       </div>
     </div>
   </nav>
-
+  <div class="container">
   <div class="row">
     <div class="col-md-12 my-5">
       <div class="container-about cabt">
@@ -58,63 +59,44 @@
       </div>
     </div>
   </div>
-  
+  </div>
   <div class="container contact1">
       <ul>
       <li><h2>Contact Info</h2></li>
+      <img src="assets/images/myloc.png" class="img-responsive myloc">
       <li><p>Address: Building No. 123 Lorem Street, Ipsum City</p></li>
       <li><p>Contact No: 123456789</p></li>
       <li><p>Email: roy.cunanan@gmail.com</p></li>
+      <li><!-- <img src="assets/images/myloc.png" class="img-responsive myloc"> --></li>
       </ul>
   </div>
 
-<!--   <div class="row">
-  <div class="col-md-6 contact">
-    <ul>
-      <li><h2>Address</h2></li>
-      <li>Building No.123 Lorem Street </li>
-      <li>Ipsum City</li>
-    </ul>
-  </div>
-  <div class="col-md-6 contact">
-    <ul>
-      <li><h2>Contact No</h2></li>
-      <li>123456789</li>
-      <li>5123123123</li>
-    </ul>
-  </div>
-  </div> -->
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
 
-    <div class="container">
-    <div id="map">
-         <script>
-          function initMap() {
-             var myLatLng = {lat: 14.622627, lng: 121.056453};
+  <script type="text/javascript"> window.onscroll = function() {scrollFunction()};
 
-             var map = new google.maps.Map(document.getElementById('map'), {
-             zoom: 17,
-              center: myLatLng
-             });
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
 
-            var marker = new google.maps.Marker({
-             position: myLatLng,
-              map: map,
-             
-             });
-           }
-           </script>
-         <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY_bDUvdB4djuTNIkdT7VS5rd7soXkK2o&callback=initMap">
-           </script>
-    </div>
-    </div>
-  <footer class="footer-about">
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+  </script>
+
+  <footer class="footer-about"> 
     <div class="container" id="contAbout">
       <div class="row">            
           <div class="socials">
-            <a href="https://fb.com"><i class="fa fa-facebook-official" style="font-size:36px">  </i></a>
-            <a href="https://youtube.com"><i class="fa fa-youtube" style="font-size:36px">  </i></a>
-            <a href="https://google.com"><i class="fa fa-google-plus" style="font-size:36px">  </i></a><br>
+            <a href="https://fb.com"><i class="fa fa-facebook-official">  </i></a>
+            <a href="https://youtube.com"><i class="fa fa-youtube">  </i></a>
+            <a href="https://google.com"><i class="fa fa-google-plus">  </i></a><br>
             <p>Copyright &copy; Tuitt Bootcamp 2018</p>
           </div>
       </div>
