@@ -580,9 +580,9 @@ margin: auto;
 	max-width: 300px;
 }
 .main-links:hover {
-	opacity: 0.3;
+	opacity: 1;
 	transition: .5s ease;
-	border: 1px solid #FFEAA3;
+	transform: scale(1.05);
 }
 .centered {
     position: absolute;
